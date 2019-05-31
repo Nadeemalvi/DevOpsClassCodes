@@ -20,7 +20,7 @@ steps:
 
 trigger:
 - master
-- task: PublishTestResults@2
+- task: 'PublishTestResults@2'
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/target/surefire-reports/*.xml'
